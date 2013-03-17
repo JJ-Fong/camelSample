@@ -13,20 +13,12 @@ public class TestCamel {
 
 	public static void main (String[] args){
 		TwitterRoute twitterRoute = new TwitterRoute();
-		JndiContext context;
-		try {
-//			context = new JndiContext();		
-//			context.bind("twitterStore", new TwitterStore());			
+		try {			
 			CamelContext myCamelContext = new DefaultCamelContext();		
 			myCamelContext.addRoutes(twitterRoute);
-			myCamelContext.start();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-		try {
+			myCamelContext.start();		
 			System.in.read();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
