@@ -1,7 +1,8 @@
 Camel Component Project
 ====================
-This Project is a template of the Camel component.
-When you create the component project , you need to move the META-INF/services/direct file to META-INF/services/PACKAGE_NAME/FOO where FOO is the URI scheme for your component and any related endpoints created on the fly and PACKAGE_NAME is your component's package name which is replaced the '.' with '/'.
+This Project is a sample camel project where you can download your tweets to console.
+It polls your twitter account every 1 minute to find new tweets.
+
 
 For more help see the Apache Camel documentation
 
